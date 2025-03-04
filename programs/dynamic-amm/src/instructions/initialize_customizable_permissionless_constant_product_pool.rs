@@ -50,10 +50,10 @@ pub struct InitializeCustomizablePermissionlessConstantProductPool<'info> {
     pub token_b_mint: Box<Account<'info, Mint>>,
 
     #[account(mut)]
-    /// Vault account for token A. Token A of the pool will be deposit / withdraw from this vault account.
+    /// CHECK: Vault account for token A. Token A of the pool will be deposit / withdraw from this vault account.
     pub a_vault: AccountInfo<'info>,
     #[account(mut)]
-    /// Vault account for token B. Token B of the pool will be deposit / withdraw from this vault account.
+    /// CHECK: Vault account for token B. Token B of the pool will be deposit / withdraw from this vault account.
     pub b_vault: AccountInfo<'info>,
 
     #[account(mut)]
@@ -156,7 +156,7 @@ pub struct InitializeCustomizablePermissionlessConstantProductPool<'info> {
     /// CHECK: Metadata program
     pub metadata_program: UncheckedAccount<'info>,
 
-    /// Vault program. The pool will deposit/withdraw liquidity from the vault.
+    /// CHECK: Vault program. The pool will deposit/withdraw liquidity from the vault.
     pub vault_program: UncheckedAccount<'info>,
     /// Token program.
     pub token_program: Program<'info, Token>,
