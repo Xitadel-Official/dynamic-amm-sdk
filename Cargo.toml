@@ -1,5 +1,5 @@
 [workspace]
-members = ["programs/*", "rust-client", "dynamic-amm-quote"]
+members = ["programs/*"]
 resolver = "2"
 
 [profile.release]
@@ -9,3 +9,6 @@ overflow-checks = true
 version = "0.0.4"
 authors = ["Andrew"]
 edition = "2021"
+
+#[patch.crates-io]
+#solana-decode-error = { version = "=2.1.0", optional = false }

@@ -12,8 +12,8 @@
     "dist"
   ],
   "dependencies": {
-    "@coral-xyz/anchor": "0.29.0",
-    "@coral-xyz/borsh": "0.29.0",
+    "@coral-xyz/anchor": "0.31.0",
+    "@coral-xyz/borsh": "0.31.0",
     "@mercurial-finance/token-math": "6.0.0",
     "@metaplex-foundation/mpl-token-metadata": "~2.13.0",
     "@meteora-ag/m3m3": "1.0.6",
